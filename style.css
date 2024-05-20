@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+ }
+.b{
+    border: 2px solid black;
+}
+ /*
+@media only screen and (max-width: 600px) {
+    .contenir{
+        display: grid;
+        grid-template-columns: auto;
+        height: 100vh;
+} */
+
+@media only screen and (min-width: 992px) {
+    .contenir{
+        height: 150vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 0.5fr;
+        grid-template-areas: 
+        " one one two two"
+        "three four four five"
+        "six seven seven five"
+        "eghit nine ten ten";
+    }
+}
+
+
+
+
+
+
+
+
+
+.itme1{
+background-color: darkblue ;
+grid-area: one; 
+
+}
+.itme1div{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+.itme2{
+background-color: darkcyan ;
+grid-area: two;
+}
+.itme2div{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100%;
+font-size: 2.5em;
+}
+.itme3{
+background-color: bisque ;
+grid-area: three;
+
+}
+.itme3div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.itme4{
+background-color: gold ;
+grid-area: four ;
+}
+.itme4div{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+
+}
+.itme5{
+background-color:green ;
+grid-area: five;
+}
+.itme5div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itme6{
+background-color:gray ;
+grid-area: six;
+}
+.itme7{
+background-color:rebeccapurple ;
+grid-area: seven;
+}
+.itme8{
+background-color:teal ;
+grid-area: eghit;
+}
+.itme9{
+background-color: steelblue;
+grid-area: nine ;
+}
+.itme10{
+background-color: sienna;
+grid-area: ten ;
+}
